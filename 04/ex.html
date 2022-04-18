@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>모두의 싸커</title>
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+
+    <!--FONT-->
+
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js">
+    </script>
+    <style>
+        /* header */
+
+        header {
+            padding: 1rem 1.5rem;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .title {
+            font-weight: 800;
+            font-size: 80px;
+        }
+
+        .subtitle {
+            font-size: 32px;
+        }
+
+        .headers-color {
+            color: black !important;
+        }
+
+        
+        /* nav */
+        
+        nav {
+            padding: 32px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        nav ol {
+            float: left;
+        }
+
+        .nav_menu {
+            display: inline-block;
+        }
+
+        .nav_btn {
+            border: 1px solid #000000;
+            padding: 10px 20px;
+            margin-right: 30px;
+            font-size: 16px;
+        }
+
+        .nav_btn:hover {
+            border: rgba(0, 0, 0, 0);
+            color: #fff;
+        }
+
+        .hover1:hover {
+            box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0) inset;
+        }
+        
+        .logoutbox {
+            float: right;
+        }
+
+        .logout {
+            background-color: black;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .logout:hover {
+            color: #fff;
+        }
+
+        .hover2:hover {
+            box-shadow: -200px 0 0 0 rgba(0, 0, 0, 0) inset;
+        }
+
+        .buttoncolor {
+            background-color: black;
+            color: white;
+            border-color: black;
+        }
+    </style>
+    <script>
+
+
+    </script>
+</head>
+
+<body>
+    <header class="">
+        <div class="has-text-centered" style="padding-bottom:16px;margin:auto;">
+            <h1 class="title headers-color ">모두의싸커</h1>
+            <h3 class="subtitle headers-color ">당신의 팀을 선택하세요</h3>
+
+        </div>
+    </header>
+    <nav class="clearfix">
+        <ol>
+            <li class="nav_menu">
+                <button class="nav_btn hover1 buttoncolor" id="ALL" onclick="window.location.reload()">ALL</button>
+            </li>
+            <li class="nav_menu">
+                <button class="nav_btn hover1" id="EPL" onclick="showTeam('EPL')">EPL</button>
+            </li>
+            <li class="nav_menu">
+                <button class="nav_btn hover1" id="La Liga" onclick="showTeam('La Liga')">La Liga</button>
+            </li>
+            <li class="nav_menu">
+                <button class="nav_btn hover1" id="Bundesliga" onclick="showTeam('Bundesliga')">Bundesliga</button>
+            </li>
+        </ol>
+        <div class="logoutbox">
+            <button onclick="sign_out()" class="logout hover2">LOGOUT</button>
+        </div>
+    </nav>
+    <div class="team" id="team_box">
+        <!-- 추가 될 내용-->
+    </div>
+</body>
+
+</html>
+
+<img width="25" height="25" alt="" src="https://dthumb-phinf.pstatic.net/?src=https://sports-phinf.pstatic.net/team/wfootball/default/19.png&amp;type=f25_25&amp;refresh=1" onerror="javascript:src='https://sports-phinf.pstatic.net/team/no_emblem_s_square.png'" class="emblem">
